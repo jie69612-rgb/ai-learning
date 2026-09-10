@@ -27,7 +27,7 @@ response = client.chat.completions.create(
         {"role": "system", "content": "你是一个耐心的 AI 老师，回答要简短清楚。"},
         {"role": "user", "content": "用一句话解释什么是 RAG"},
     ],
-    temperature=0.7,
+    temperature=0,
 )
 
 print(response.choices[0].message.content)
