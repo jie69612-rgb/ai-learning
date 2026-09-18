@@ -1,0 +1,16 @@
+# 运行环境：Python 3.11+
+
+# LLM SDK：用 OpenAI 兼容协议访问 DeepSeek
+openai>=1.60.0
+
+# 从 .env 读取配置
+python-dotenv>=1.0.1
+
+# HTTP 客户端（显式超时控制）
+httpx>=0.28.0
+
+# ---- 开发工具（requirements-dev.txt 也有，这里方便一次装完）----
+pytest>=8.3.0
+pytest-mock>=3.14.0
+mypy>=1.14.0
+ruff>=0.9.0

@@ -1,6 +1,38 @@
+# ---- 密钥：最高优先级，绝对不能提交 ----
 .env
-.venv/
+.env.*
+!.env.example
+*.pem
+credentials.json
+
+# ---- Python ----
 __pycache__/
-*.pyc
-.DS_Store
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---- 工具缓存 ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- 编辑器 / 系统 ----
 .idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ---- 本项目运行产物 ----
+outputs/
+*.log
+cache/
+chroma_db/
